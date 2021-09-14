@@ -148,11 +148,21 @@ setSelectedTab }) => {
                     <CustomDrawerItem
                         label={constants.screens.notification}
                         icon={icons.notification}
+                        isFocused={selectedTab == constants.screens.notification}
+                        onPress={() => {
+                            setSelectedTab(constants.screens.notification)
+                            navigation.navigate("MainLayout")
+                        }}
                     />
 
                     <CustomDrawerItem
                         label={constants.screens.favourite}
                         icon={icons.favourite}
+                        isFocused={selectedTab == constants.screens.favourite}
+                        onPress={() => {
+                            setSelectedTab(constants.screens.favourite)
+                            navigation.navigate("MainLayout")
+                        }}
                     />
 
                     {/* Line Divider*/}
