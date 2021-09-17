@@ -375,6 +375,7 @@ selectedTab, setSelectedTab }) => {
                         paddingBottom: 10,
                         borderTopLeftRadius: 20,
                         borderTopLeftRadius: 20,
+                        borderRadius: 30,
                         backgroundColor: COLORS.white
                     }}
                 >
